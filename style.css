@@ -1,107 +1,184 @@
-body{
-    font-family: Helvetica, Arial, sans-serif, Helvetica, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
-}
+body {
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            font-size: 1.2vw;
+            background-color: #fff;
+        }
 
-    #logo{
-        margin: 0px;
-        padding: 8px;
-        font-family: "Fredoka One", sans-serif;
-        box-shadow: 8px 8px 10px 5px rgb(204, 136, 20);
-        width: 16%;
-        text-shadow: 
-        1px 1px 0px black,
-        -1px 1px 0px black,
-        1px 1px 0px black,
-        -1px 1px 0px black,
-        ;
+        #logo {
+            margin: 0;
+            padding: 8px;
+            font-family: "Fredoka One", sans-serif;
+            box-shadow: 4px 4px 5px rgb(204, 136, 20);
+            width: 14%;
+            text-shadow:
+                1px 1px 0px black,
+                -1px 1px 0px black,
+                1px 1px 0px black,
+                -1px 1px 0px black;
+        }
 
-    }
+        ul {
+            margin: 0;
+        }
 
+        body > header {
+            background-color: orange;
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            justify-content: space-around;
+        }
 
- ul { 
-    margin: 0px;
- }
+        #nav-ul {
+            display: flex;
+        }
 
+        #nav-ul > li {
+            padding: 8px;
+            margin: 12px;
+        }
 
+        body > header > nav > ul {
+            list-style: none;
+            text-decoration: none;
+        }
 
+        .navbutton {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 20%;
+        }
 
-body > header {
-     background-color: orange;
-     display: flex;
-     height: 12vh;
-     align-items: center;
-     justify-content: space-around;
+        body > main {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            grid-template-areas:
+                "image1 aboutdogs aboutdogs"
+                "image2 image2 about"
+                "brandnewagency image3 portfolio"
+                "services image4 createportfolio"
+                "contact contact contact";
+        }
 
-}
+        /* General section styles */
+        .image-section, .text-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-#nav-ul {
-    display: flex;
-}
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+        }
 
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
+        .text-section {
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
+        /* Image section styles */
+        .image-section img {
+            border-radius: 5%;
+            object-fit: cover;
+        }
 
-.navbutton{
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 20%;
-}
- 
-body > main article {
-    width: 60%;
-    margin: auto;
-}
+        .image1 img {
+            width: 100%;
+            height: 250px;
+        }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
+        .image2 img {
+            width: 100%;
+            height: 300px;
+        }
 
-#main-content > div {
-    width: 70%;
-}
+        .image3 img {
+            width: 100%;
+            height: 200px;
+        }
 
+        .image4 img {
+            width: 100%;
+            height: 250px;
+        }
 
-form {
-    text-align: center;
-}
+        .services {
+            background-color: #F8E0AE;
+            grid-area: services;
+        }
 
-h2 {
-    text-align: center;
-}
+        .contact {
+            background-color: #99DFCC;
+            grid-area: contact;
+        }
 
-    body > footer {
-        background-color: orange;
-        display: flex;
-}
+        
+        .aboutdogs {
+            grid-area: aboutdogs;
+        }
 
-img {
-    border-radius: 100%;
-}
+        .brandnewagency {
+            grid-area: brandnewagency;
+        }
 
-#footer-ul{
-    display: flex;
-    list-style: none;
-}
+        .portfolio {
+            grid-area: portfolio;
+        }
 
-#footer-ul > div > li {
-    margin-left: 12px;  
-}
+        .createportfolio {
+            grid-area: createportfolio;
+        }
 
-#footer-ul > div > li > a{
-    text-decoration: none;
-    color: white;
-}
+        .image1 {
+            grid-area: image1;
+        }
 
+        .image2 {
+            grid-area: image2;
+        }
 
+        .image3 {
+            grid-area: image3;
+        }
+
+        .image4 {
+            grid-area: image4;
+        }
+
+        .about {
+            grid-area: about;
+        }
+
+        body > footer {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        #footer-ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #footer-ul > div > li {
+            margin-left: 8px;
+        }
+
+        #footer-ul > div > li > a {
+            text-decoration: none;
+            color: white;
+        }
